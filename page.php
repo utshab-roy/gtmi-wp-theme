@@ -23,5 +23,3 @@
 </article>
 
 <?php get_footer(); ?>
-
-log
