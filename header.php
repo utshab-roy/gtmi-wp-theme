@@ -30,10 +30,12 @@
             <div id="navigation" class="collapse navbar-collapse flex-column">
 
                 <?php
+                //this is for the dynamic theme part
                 if (function_exists('the_custom_logo')) {
                     $custom_logo_id = get_theme_mod('custom_logo');
                     $logo = wp_get_attachment_image_src($custom_logo_id);
                 }
+                //$logo[0] will provide the location of the image
                 ?>
 
                 <img class="mb-3 mx-auto logo" src="<?php echo $logo[0]; ?>" alt="logo">
